@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Text Builder</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 my-5">
+            <div class="card shadow bg-light">
+                <div class="card-header bg-warning">
+                    <h4 class="text-center">Text Builder</h4>
+                </div>
+                <form action="" id="form" class="m-2">
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Text</label>
+                    <input  id="text" class="form-control" type="text">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Color</label> <br>
+                    <input id="color"type="color">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="align">Align</label><br>
+                    <input checked class="align" type="radio" name="align" value="left">
+                    <label  for="left">left</label>
+                    <input class="align" type="radio" name="align" value="center">
+                    <label  for="center">center</label>
+                    <input class="align" type="radio" name="align" value="right">
+                    <label  for="right">right</label>
+
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Padding</label>
+                    <input  id="padding" class="form-control" type="number">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Margin</label>
+                    <input id="margin" class="form-control" type="number">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Font Size</label>
+                    <input id="fontsize" class="form-control" type="number">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" for="">Font Weight</label>
+                    <input type="number" class="form-control" min="100" max="900" step="100" name="" id="font_weight">
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" >Font Style</label> <br>
+                    <select id="font_style">
+                        <option   value="italic">italic</option>
+                        <option  value="oblique">oblique</option>
+                        <option  selected  value="normal">normal</option>
+                    </select>
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" >Font Family</label> <br>
+                    <select id="font_family">
+                        <option selected  value="poppins">Poppins</option>
+                        <option  value="roboto">Roboto</option>
+                        <option  value="lato">Lato</option>
+                        <option  value="impact">Impact</option>
+                    </select>
+                </div>
+                <div class="my-1  form-group">
+                    <label class="text-primary font-weight-bold h6" >Text Transform</label> <br>
+                    <select id="text_trans">
+                        <option  class="text_trans" value="uppercase">uppercase</option>
+                        <option class="text_trans" value="lowercase">lowercase</option>
+                        <option  selected class="text_trans" value="capitalize">capitalize</option>
+                    </select>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="col-md-10 my-5">
+            <div class="card">
+                <h1 id="output">Your text is Here</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
